@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="card text-center">
+  <div class="card-header">
+    О нас
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>Миссия нашей компании - внести вклад развитие флайбордов по всему миру, сделать полёт более доступным,
+        безопасным и интересным для каждого человека на планете.  Мы убеждены, что возможность передвигаться по
+        воздуху станет ключевым фактором, который изменит всю транспортную систему в каждом городе.
+        Мы занимаемся производством летательных аппаратов более восьми лет и гарантируем качество предоставляемых
+        товаров и интруктажей.
+      </p>
+      <footer class="blockquote-footer"> <cite title="Source Title">Юлия Гирш</cite></footer>
+      <a href="{% url 'catalog' %}" class="btn btn-primary">Приступить к покупкам</a>
+    </blockquote>
+  </div>
+</div>
+{% endblock %}
