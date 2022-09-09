@@ -1,1 +1,25 @@
 {% extends 'base.html'%}
+{% block content %}
+{% for item in goods %}
+<div class="container mt-3">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="card mb-3" style="width: 100rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <p class="card-text">{{item.description}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Стоимость: {{item.price}}</li>
+                    <li class="list-group-item">Гарантия: {{item.guarantee}} год(а)</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Подробнее...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
